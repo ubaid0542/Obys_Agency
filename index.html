@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
+    <title>Obys Agency</title>
+    <link rel="shortcut icon" href="Favicon/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.css" />
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
+    <div id="cursor"></div>
     <div id="loader">
         <div class="line">
             <div id="line1-part1">
@@ -26,14 +29,42 @@
 
     </div>
     <div id="main">
-        <div id="page1"></div>
+        
+        <div id="page1">
+            <nav>
+                <div id="logo">
+                    <img src="obys logo.png">
+                </div>
+                <div id="nav-part2">
+                    <h4>Work</h4>
+                    <h4>About</h4>
+                    <h4>Contents</h4>
+                </div>
+            </nav>
+            <div class = "hero" id="hero1">
+                <h1>WE DESIGN</h1>
+            </div>
+            <div class = "hero" id="hero2">
+                <h1>UNIQUE</h1>
+            </div>
+            <div class = "hero" id="hero3">
+                <h2>WEB /</h2>
+                <h2>GRAPHIC</h2>
+            </div>
+            <div class = "hero" id="hero4">
+                <h1>EXPRIENCE</h1>
+            </div>
+        </div>
         <div id="page2"></div>
         <div id="page3"></div>
     </div>
     
+    <!-- Gsap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <!-- ScrollTrigger Plugin -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Shery.js -->
+    <script  type="text/javascript"  src="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
