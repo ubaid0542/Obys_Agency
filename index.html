@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Obys Agency</title>
+    <!--favicon for icon-->
     <link rel="shortcut icon" href="Favicon/favicon-32x32.png" type="image/x-icon">
+    <!--Locomotive js , CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <!--shery js-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.css" />
     <!--Remix icon-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <!-- animated CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-    <div id="cursor"></div>
     <div id="loader">
         <div class="line">
             <div id="line1-part1">
@@ -31,8 +36,7 @@
 
     </div>
     <div id="main">
-        
-        <div id="page1">
+        <div id="page1" data-scroll data-scroll-speed="-1">
             <nav>
                 <div id="logo">
                     <img src="obys logo.png">
@@ -56,19 +60,52 @@
             <div class = "hero" id="hero4">
                 <h1>EXPRIENCE</h1>
             </div>
+            <img id="flag" src="images/Flag.jpg">
         </div>
-        <div id="page2">
+        <div id="page2" data-scroll data-scroll-speed="-1" >
             <div id="video_container">
                 <div id="video_cursor">
                     <i class="ri-play-fill"></i>
                 </div>
-                <img src="https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg">
-                <video autoplay="false" loop muted="false" src="https://obys.agency/wp-content/uploads/2022/11/Obys-Showreel-2022.mp4"></video>
+                <video loop src="https://obys.agency/wp-content/uploads/2022/11/Obys-Showreel-2022.mp4"></video>
             </div>
         </div>
-        <div id="page3">
+        <div id="page3" data-scroll data-scroll-speed="-2">
+            <h1>OUR PROJECTS</h1>
+            <div class="underline"></div>
+            <div id="image-div-container">
+                <div class="image-div">
+                    <img src="https://images.unsplash.com/photo-1756334324139-b1e23f33cc03?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D">
+                    <img src="https://images.unsplash.com/photo-1756314355668-7d3056db8600?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzMXx8fGVufDB8fHx8fA%3D%3D">
+                </div>
+                 <div class="image-div">
+                    <img src="https://plus.unsplash.com/premium_photo-1756137116378-ac4e7baeabdf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMDF8fHxlbnwwfHx8fHw%3D">
+                    <img src="https://images.unsplash.com/photo-1621244516038-069069a70777?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG51ZGUlMjBnaXJsfGVufDB8fDB8fHww">
+                </div>
+                <div id="page3-circle1">
+                    <img src="arrow svg/arrow.png">
+                    <div class="circle-in">
+                        <p>We are Thrilled to have you on bord. We have you enjoyed the project</p>
+                    </div>
+                </div>
+                <div id="page3-circle2">
+                    <img src="arrow svg/arrow.png">
+                    <div class="circle-in">
+                        <p>We are Thrilled to have you on bord. We have you enjoyed the project</p>
+                    </div>
+                </div>
+                 <div class="image-div">
+                    <img src="https://plus.unsplash.com/premium_photo-1756131938178-1de1f6d33790?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3M3x8fGVufDB8fHx8fA%3D%3D">
+                    <img src="https://images.unsplash.com/photo-1756232973403-110ab50111f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4NHx8fGVufDB8fHx8fA%3D%3D">
+                </div>
+                 <div class="image-div">
+                    <img src="https://images.unsplash.com/photo-1519668752166-ebdbfe986afd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bnVkZXxlbnwwfHwwfHx8MA%3D%3D">
+                    <img src="https://images.unsplash.com/photo-1580666143438-c74b3f22b2c1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG51ZGV8ZW58MHx8MHx8fDA%3D">
+                </div>
+
+            </div>
         </div>
-        <div id="page4">
+        <div id="page4" data-scroll data-scroll-speed="-2">
             <div id="page4_content">
                 <h1>About Obys</h1>
                 <div class="underline"></div>
@@ -115,14 +152,69 @@
                 <div class="underline"></div>
             </div>
         </div>
+        <div id="page5" data-scroll data-scroll-speed="-1">
+            <div class="elem">
+                <h1><span>Sport</span> - Fasion - Technology - </h1>
+                <h1><span>Sport</span> - Fasion - Technology - </h1>
+            </div>
+            <div class="elem2">
+                <h1>Science - <span>patners</span> - travels - </h1>
+                <h1>Science - <span>patners</span> - travels - </h1>
+            </div>
+            <div class="elem">
+                <h1>Sport - Fasion - <span>Technology</span> - </h1>
+                <h1>Sport - Fasion - <span>Technology</span> - </h1>
+            </div>
+            <div class="elem2">
+                <h1>Science - <span>patners</span> - travels - </h1>
+                <h1>Science - <span>patners</span> - travels - </h1>
+            </div>
+        </div>
+        <div id="footer" data-scroll-speed="-1">
+            <h1>LET'S CREATE</h1>
+            <div class="underline"></div>
+            <div id="footer-div">
+                <div class="box">
+                    <h6>Social</h6>
+                    <h5>Dribble</h5>
+                    <h5>Behance</h5>
+                    <h5>Instagram</h5>
+                    <h5>Facebook</h5>
+                    <h5>Twitter</h5>
+                    <h5>Youtube</h5>
+                </div>
+                <div class="box">
+                    <h6>Address</h6>
+                    <h5>Pushkinska 5 61057 karkiv Ukraine</h5>
+                </div>
+                <div class="box">
+                    <h6>Say Hi!</h6>
+                    <h5>info@obye.agency</h5>
+                </div>
+            </div>
+            <div class="underline"></div>
+            <h5>Obys Agency &copy;2023</h5>
+        </div>
     </div>
-    
+    <!--Locomotive js-->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <!-- Gsap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <!-- ScrollTrigger Plugin -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Three.js is needed for 3d Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+    <!-- ControlKit is needed for Debug Panel -->
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
     <!-- Shery.js -->
     <script  type="text/javascript"  src="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.js"></script>
+    <!-- for textillate.js -->
+     <!-- Jquery -->
+     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+     <!-- lettering js -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js" integrity="sha512-VJ/iYbiu1eJ6yLimfTi65t2R9TFcG5D9X8ZCfbbEFhTfPnKJh8byoKXEawi5ScJZBYL1eiirL1+MczZDx0Tz9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <!-- textilate js -->
+       <script src="https://cdn.jsdelivr.net/npm/textillate@0.4.1/jquery.textillate.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
