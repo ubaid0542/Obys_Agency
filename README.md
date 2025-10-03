@@ -18,8 +18,8 @@ This website features **magnetic navigation buttons**, **gooey effect on images*
 
 ## ✨ Features  
 
-- 🧲 **Magnetic Navbar Buttons** → Buttons attract cursor on hover  
-- 🫧 **Gooey Effect on Pictures** → Liquid-like hover effect on images  
+- 🧲 **Magnetic effect Navbar Buttons** → Buttons attract cursor on hover  
+- 🫧 **Gooye Effect on Pictures** → Liquid-like hover effect on images  
 - 🌀 **Smooth Scrolling** → Fluid scroll animations for seamless navigation  
 - 📱 **Responsive Design** → Works on desktops, tablets, and mobile devices  
 - ⚡ **Optimized Performance** → Lightweight and fast  
