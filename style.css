@@ -1,3 +1,20 @@
+@font-face{
+    font-family: "Plain Light";
+    src:url("/font/plain-regular-webfont.ttf")
+}
+@font-face{
+    font-family: "Plain Light";
+    src:url("/font/plain-light-webfont.woff")
+}
+@font-face{
+    font-family: "silk serif";
+    src:url("/font/silkserif-regularitalic-webfont.ttf")
+}
+@font-face{
+    font-family: "silk serif";
+    src:url("/font/silkserif-lightitalic-webfont.woff")
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -104,7 +121,8 @@ body{
 #page1{
     width: 100%;
     height: 100vh;
-    background-color: #0a0a0a;
+    /* background-color: #0a0a0a; */
+    position: relative;
 }
 nav #logo img{
     width: 5vw;
@@ -124,6 +142,7 @@ nav #nav-part2{
 #nav-part2 h4{
     font-size: 1vw;
     font-weight: 500;
+    z-index: 99;
 }
 .hero{
     width: 72%;
@@ -142,17 +161,17 @@ nav #nav-part2{
 .hero h1{
     font-size: 6.2vw;
     font-weight: 700;
-    line-height: 6.8vw;
+    line-height: 6vw;
     text-transform: uppercase;
 }
-#hero::before{
+#hero1 h1::before{
     content: "01";
     font-size: 3vw;
     position: absolute;
     font-weight: 100;
     font-family: "silk serif";
-    left: 18%;
-    top: 19%;
+    left: -25%;
+    top: -15%;
 }
 
 #hero3 h2{
@@ -243,6 +262,7 @@ nav #nav-part2{
     background-color: #ffff;
     margin-left: 28vw;
 }
+
 #image-div-container{
     /* background-color: red; */
     padding: 1vw;
@@ -260,8 +280,10 @@ nav #nav-part2{
     position: relative;
     overflow: hidden;
     margin: 2vw;
-    
+    opacity: 1;
+    display: inline-block;
 }
+
 .image-div:nth-child(1){
     width: 21vw;
     height: 29vw;
@@ -273,9 +295,9 @@ nav #nav-part2{
     object-fit: cover;
     object-position: center;
     margin: 2vw;
-    
-    
+    position: absolute;
 }
+
 ._canvas_container{
     z-index: 9999 !important;
     pointer-events: none;
@@ -369,7 +391,7 @@ nav #nav-part2{
     opacity: 1;
 }
 #page4{
-    min-height: 100vh;
+    min-height: 80vh;
     width: 100%;
     position: relative;
     padding-top: 6vh 0;
@@ -447,7 +469,7 @@ nav #nav-part2{
 
 #page5{
     width: 100%;
-    min-height: 100vh;
+    min-height: 85vh;
     position: relative;
     margin-top: 20vw;
 }
@@ -466,7 +488,7 @@ nav #nav-part2{
     display: inline-block;
     margin-right: 16px;
     animation-name:marqueAnime;
-    animation-duration: 12s;
+    animation-duration: 18s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -495,7 +517,7 @@ nav #nav-part2{
     margin-right: 16px;
     transform: translateX(calc(-100% -20px));
     animation-name:marqueAnime;
-    animation-duration: 12s;
+    animation-duration: 22s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: reverse;
@@ -511,57 +533,100 @@ nav #nav-part2{
     color: transparent;
 }
 
-#footer{
-    height: 80vh;
+#footer {
+    height: 85vh;
     width: 100%;
+    /* background-color: red; */
     position: relative;
     padding-left: 28vw;
+    margin-top: 5vw;
     padding-right: 2vw;
 }
-#footer h1{
-    font-size: 7vw;
+
+#footer h1 {
+    font-size: 7.2vw;
+    text-transform: uppercase;
+    /* background-color: blue; */
     position: relative;
-    color: #fff;
 }
-#footer h1::before{
-    content: "04";
-    font-size: 3vw;
+
+#footer-text {
+    position: relative;
+    /* background-color: red; */
+}
+
+#footer-text h2 {
+    font-size: 7.2vw;
+    text-transform: uppercase;
     position: absolute;
+    top: -10%;
+    font-weight: 500;
+
+    left: 0;
+    font-family: "silk serif";
+}
+
+#footer-text h2 span {
+    font-family: "silk serif";
+    opacity: 0;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+}
+
+#footer-text::before {
+    content: "04";
+    position: absolute;
+    font-size: 3vw;
     font-weight: 100;
     font-family: "silk serif";
-    left: -12%;
-    top: 8%;
+    left: -13%;
+    top: 6%;
 }
-.underline{
+
+.underline {
+    height: 1px;
     width: 100%;
-    height: 2px;
     background-color: #fff;
-    margin: 2vw 0;
+    margin: 3vw 0;
 }
-#footer-div{
+
+#footer-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding-right: 15vw;
     padding-top: 4vw;
     margin-bottom: 6vw;
 }
-#footer-div h6{
+
+#footer-div h6 {
     font-size: 0.9vw;
-    margin-bottom: 1.5vw ;
+    margin-bottom: 1.5vw;
+    font-weight: 500;
 }
-.box{
+
+.box {
     width: 20%;
 }
-#footer-div h5{
+
+#footer-div h5 {
     font-size: 1.4vw;
     font-weight: 500;
-    margin: 0.2vh 0;
+    /* margin: 0.1vh 0; */
 }
-#footer>h5{
+
+#footer > h5 {
     font-weight: 500;
     font-size: 1vw;
+    color:#fff;
 }
+
 
 
 #flag{
